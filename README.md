@@ -35,7 +35,7 @@ docker run --ulimit memlock=-1:-1 -it --rm=true --memory-swappiness=0 --name qua
 
 The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
 
-> **_NOTE_**  Please, note that you'll need a schema in your database, so to test in local the _prod_ profile (using the above postgres container), set _-Dfruit.schema.create=true_ as follows: _java -jar target/quarkus-app/quarkus-run.jar_.
+> **_NOTE_**  Please, note that you'll need a schema in your database, so to test in local the _prod_ profile (using the above postgres container), set _-Dfruit.schema.create=true_ as follows: _java -Dfruit.schema.create=true -jar target/quarkus-app/quarkus-run.jar_.
 
 ## Creating a native executable
 
